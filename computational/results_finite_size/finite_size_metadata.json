@@ -1,0 +1,14 @@
+{
+  "sizes": [
+    256,
+    512,
+    1024,
+    2048,
+    4096
+  ],
+  "fixed_duration": 64.0,
+  "realisations_for_N_256_to_2048": 64,
+  "sources_per_realisation": 1024,
+  "largest_result_reused_from": "computational/results_high_statistics",
+  "interpretation": "finite-size diagnostic, not full finite-size scaling"
+}
