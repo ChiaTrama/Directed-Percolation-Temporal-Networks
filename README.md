@@ -69,7 +69,7 @@ used to generate the presentation result and for modelling limitations.
 
 ## Repository contents
 
-- `presentation/directed_percolation.pdf`: final presentation (v4).
+- `presentation/directed_percolation.pdf`: final presentation.
 - `computational/simulate_cluster_mass.py`: network generation and cluster-mass simulation.
 - `computational/finite_size_diagnostic.py`: system-size comparison.
 - `computational/results_high_statistics/`: presentation figure, data and metadata.
