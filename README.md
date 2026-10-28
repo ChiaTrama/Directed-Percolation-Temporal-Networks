@@ -1,49 +1,41 @@
 # Directed Percolation in Temporal Networks
 
-**Physics of Complex Systems · MSc in Physics of Data · University of Padua**  
+**Physics of Complex Systems · MSc in Physics of Data · University of Padua · September 2026**<br>
 Chiara Tramarin
 
-How does a limit on waiting time affect reachability in a temporal network?
-This academic project explores the connection between temporal paths and directed
-percolation through a literature-based presentation and a Python computational
-illustration.
+This repository contains the materials prepared for a Physics of Complex Systems
+exam project on directed percolation in temporal networks. The main outcome is a
+literature-based presentation of the papers cited below, accompanied by a small
+Python computational illustration of one qualitative result.
 
-[Read the final presentation](presentation/directed_percolation.pdf) ·
+[View the final presentation](presentation/directed_percolation.pdf) ·
 [Computational methods and reproduction commands](computational/README.md)
 
-## Project overview
+## Project scope
 
-The presentation discusses event graphs, absorbing-state transitions, mean-field
-theory and critical behaviour, following the papers cited below. The accompanying
-code generates random regular networks with Poisson edge activations and measures
-the mean number of events reachable under a maximum waiting-time constraint.
+The presentation reviews temporal paths, event graphs, absorbing-state
+transitions, mean-field theory and critical behaviour. Its goal is to explain
+how a limited waiting time maps reachability in temporal networks to a directed
+percolation problem.
 
-The repository contains the project presentation, simulation implementation,
-saved numerical results and a finite-size diagnostic. The underlying theory and
-published reference thresholds are attributed to Badie-Modiri and co-authors;
-this project is an educational study, not a claim of a new theoretical result.
+The theory and reference thresholds come from the cited papers. My contribution
+was the presentation and a small-scale Python implementation used to illustrate
+the reported growth of the mean reachable event-cluster mass near the transition.
+The numerical part is a qualitative course exercise rather than an independent
+research result or a complete reproduction of the original study.
 
 **Methods and tools:** Python, NumPy, Matplotlib, random graph generation,
 stochastic simulation, graph traversal, uncertainty estimation and scientific
 visualisation.
 
-## Results
+## Computational illustration
 
-![Mean reachable event-cluster mass](computational/results_high_statistics/cluster_mass.png)
-
-For a random 9-regular network with 4,096 nodes, the saved run averages over
-128 realisations and 1,024 source events per realisation. The mean reachable
-cluster mass increases from approximately **1.45 to 32.52** across the sampled
-waiting-time range (0.020–0.084). Parameters, seeds and diagnostics are recorded
-in [run metadata](computational/results_high_statistics/run_metadata.json).
-
-![Finite-size comparison](computational/results_finite_size/finite_size_diagnostic.png)
-
-The comparison covers 256–4,096 nodes at a fixed observation duration of 64.
-It illustrates finite-size suppression near the transition. This is a qualitative
-computational illustration: it is **not a full finite-size-scaling analysis or a
-precision measurement of a critical exponent**. The largest system uses the
-128-realisation run above; the smaller systems use 64 realisations each.
+The accompanying code generates random regular networks with Poisson edge
+activations and measures the mean number of events reachable under a maximum
+waiting-time constraint. Saved data and figures include a higher-statistics run
+and a comparison across several network sizes. Parameters, random seeds, results
+and limitations are documented in the
+[computational README](computational/README.md).
 
 ## Quick start
 

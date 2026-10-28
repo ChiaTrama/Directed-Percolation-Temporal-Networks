@@ -9,8 +9,8 @@ approaches the transition from the subcritical side.
 
 This is an **illustration**, not a publication-scale reproduction. The paper
 uses systems up to `N = 2^17` and hundreds or thousands of realizations. The
-defaults below are intended to run on a laptop and to produce a result that can
-be understood and explained during the exam.
+defaults below are intended to run on a standard laptop and to produce a result
+that can be inspected without publication-scale computing resources.
 
 ## Model
 
@@ -70,7 +70,7 @@ Outputs are written to `computational/results/`:
 
 ## High-statistics run used in the presentation
 
-The figure included in the revised presentation was generated with:
+The figure included in the final presentation was generated with:
 
 ```bash
 python3 computational/simulate_cluster_mass.py \
